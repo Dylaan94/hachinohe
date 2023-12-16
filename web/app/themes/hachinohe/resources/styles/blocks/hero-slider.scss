@@ -13,4 +13,11 @@
       @apply bg-white;
     }
   }
+  .hero-slider-content {
+    .hero-slider-content-lead-text {
+      p {
+        @apply text-slate-600 text-center;
+      }
+    }
+  }
 }

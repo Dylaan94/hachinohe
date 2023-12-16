@@ -1,8 +1,9 @@
-<section class="hero-slider w-full h-full">
+<section class="hero-slider w-full h-full ">
+    {{-- Autplay swiper --}}
     <div class="swiper mySwiper h-[80vh]">
         <div class="swiper-wrapper w-full h-screen">
             @foreach (get_field('slider') as $slide)
-                <div class="swiper-slide relative h-screen bg-cover"
+                <a class="swiper-slide relative h-screen bg-cover" href="{{ $slide['link'] }}"
                     style="background-image: url('{{ $slide['image'] }}')">
 
                     {{-- Overlay --}}
@@ -15,9 +16,24 @@
                         <div class="w-16 h-2 mt-6" style="background-color: {{ $slide['underline_colour'] }}"></div>
 
                     </div>
-                </div>
+                </a>
             @endforeach
         </div>
         <div class="swiper-pagination"></div>
     </div>
+
+    <div class="hero-slider-content w-full flex justify-center py-12">
+        <div class="hero-slider-content-container w-5/6 max-w-screen-xl flex items-center flex-col">
+            <h2 class="text-3xl">
+                {!! get_field('heading') !!}
+            </h2>
+            <span class="hero-slider-content-lead-text pt-6">
+                {!! get_field('lead_text') !!}
+            </span>
+        </div>
+
+    </div>
+
+
+
 </section>

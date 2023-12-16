@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+// import blocks
+@import 'blocks/hero-slider.scss';
+
 @import 'swiper/css/bundle';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';

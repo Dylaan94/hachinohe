@@ -1,4 +1,5 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 // impport css
 
 export default function handleSwipers() {
@@ -8,9 +9,15 @@ export default function handleSwipers() {
     slidesPerView: 1,
     spaceBetween: 30,
 
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
+
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    modules: [Autoplay, Navigation, Pagination],
   });
 }

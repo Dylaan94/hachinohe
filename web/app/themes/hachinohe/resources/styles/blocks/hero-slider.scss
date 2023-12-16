@@ -1,0 +1,16 @@
+.hero-slider {
+  .slide-content {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-white text-5xl;
+    }
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      @apply bg-white;
+    }
+  }
+}

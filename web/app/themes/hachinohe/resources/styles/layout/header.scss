@@ -1,0 +1,28 @@
+.banner {
+  .nav-menus {
+    .menu-upper-navigation-container {
+      @apply self-end;
+      ul {
+        li {
+          @apply ml-[10px];
+        }
+        li::after {
+          content: '|';
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .menu-main-menu-container {
+      @apply h-full items-center flex justify-end;
+
+      ul li {
+        @apply text-lg;
+      }
+
+      ul li:not(:last-child) {
+        @apply mr-6;
+      }
+    }
+  }
+}

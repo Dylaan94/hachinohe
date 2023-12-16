@@ -4,7 +4,6 @@
 add_action('acf/init', 'my_acf_blocks_init');
 function my_acf_blocks_init()
 {
-
     // Check function exists.
     if (function_exists('acf_register_block_type')) {
 

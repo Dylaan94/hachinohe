@@ -16,5 +16,15 @@ function my_acf_blocks_init()
             'render_template'   => 'resources/views/blocks/test.blade.php',
             'category'          => 'formatting',
         ));
+
+        acf_register_block_type(array(
+            'name'              => 'hero-slider',
+            'title'             => __('Hero Slider'),
+            'description'       => __('A block for showing the hero slider.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/hero-slider', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

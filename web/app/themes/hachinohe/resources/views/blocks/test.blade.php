@@ -1,3 +1,3 @@
-<section class="test bg-black">
-    hello i am a test
+<section class="test">
+    hello i am a
 </section>

@@ -20,4 +20,23 @@ export default function handleSwipers() {
     },
     modules: [Autoplay, Navigation, Pagination],
   });
+
+  new Swiper('.storeSwiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    pagination: {
+      el: '.store-swiper-pagination',
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+
+    modules: [Autoplay, Navigation, Pagination],
+  });
 }

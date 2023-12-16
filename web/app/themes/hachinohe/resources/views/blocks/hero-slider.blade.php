@@ -22,9 +22,9 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="hero-slider-content w-full flex justify-center py-12">
-        <div class="hero-slider-content-container w-5/6 max-w-screen-xl flex items-center flex-col">
-            <h2 class="text-3xl">
+    <div class="hero-slider-content w-full flex justify-center py-16">
+        <div class="hero-slider-content-container w-3/4 max-w-screen-xl flex items-center flex-col">
+            <h2 class="text-4xl">
                 {!! get_field('heading') !!}
             </h2>
             <span class="hero-slider-content-lead-text pt-6">

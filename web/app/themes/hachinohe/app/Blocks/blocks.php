@@ -17,5 +17,16 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        // Block: Stores 
+        acf_register_block_type(array(
+            'name'              => 'stores',
+            'title'             => __('Stores'),
+            'description'       => __('A block for showing stores.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/stores', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

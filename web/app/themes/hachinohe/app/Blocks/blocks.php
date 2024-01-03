@@ -28,5 +28,16 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        // Block: Stores 
+        acf_register_block_type(array(
+            'name'              => 'hero',
+            'title'             => __('Hero'),
+            'description'       => __('A block for showing plain hero.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/hero', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

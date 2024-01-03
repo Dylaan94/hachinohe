@@ -3,6 +3,7 @@
     - add > to the right of the button
     - ensure it works with WPML 
     - Ensure responsive
+    - Anchor links bar (see design)
     --}}
 
 <section class="stores flex w-full justify-center">

@@ -20,11 +20,11 @@ function my_acf_blocks_init()
 
         // Block: Stores 
         acf_register_block_type(array(
-            'name'              => 'stores',
-            'title'             => __('Stores'),
-            'description'       => __('A block for showing stores.'),
+            'name'              => 'content-panel',
+            'title'             => __('Content Panel'),
+            'description'       => __('A block for showing content panels.'),
             'render_callback' => function ($block) {
-                echo view('blocks/stores', ['block' => $block]);
+                echo view('blocks/content-panel', ['block' => $block]);
             },
             'category'          => 'formatting',
         ));

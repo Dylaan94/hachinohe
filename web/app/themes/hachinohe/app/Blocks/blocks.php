@@ -39,5 +39,16 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        // Block: Summary
+        acf_register_block_type(array(
+            'name'              => 'summary',
+            'title'             => __('Summary'),
+            'description'       => __('A block for showing summary.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/summary', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

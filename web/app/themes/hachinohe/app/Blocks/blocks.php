@@ -50,5 +50,27 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        // Block: Google Maps
+        acf_register_block_type(array(
+            'name'              => 'google-maps',
+            'title'             => __('Google Maps'),
+            'description'       => __('A block for showing google maps.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/google-maps', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
+
+        // Block: Showcase Panel
+        acf_register_block_type(array(
+            'name'              => 'showcase-panel',
+            'title'             => __('Showcase Panel'),
+            'description'       => __('A block for showing showcase panels.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/showcase-panel', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

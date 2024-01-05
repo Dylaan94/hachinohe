@@ -3,7 +3,7 @@
     - Responsives
 --}}
 
-<section class="hero flex h-[60vh] w-full items-end justify-center bg-cover pb-8"
+<section class="hero flex h-[70vh] w-full items-end justify-center border-[18px] border-white bg-cover pb-8"
     style="background-image: url('{{ get_field('background_image') }}')">
 
     {{-- Content --}}

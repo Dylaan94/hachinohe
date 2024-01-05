@@ -6,7 +6,8 @@
     - Anchor links bar (see design)
     --}}
 
-<section class="stores flex w-full justify-center">
+<section class="stores flex w-full justify-center border-l-[18px]"
+    style="border-color: {{ get_field('border_colour') }}">
     <div class="stores-container flex w-3/4 max-w-screen-xl flex-col">
 
         @foreach (get_field('stores') as $store)
@@ -36,15 +37,19 @@
 
                     <div class="image-gallery-buttons mt-2 flex w-full justify-between">
 
-                        <a href="{{ $store['button_link_1'] }}"
-                            class="w-2/5 border border-[#734ddb] py-2 pl-5 pr-9 text-center text-[#734ddb] transition hover:bg-[#734ddb] hover:text-white">
-                            {{ $store['button_text_1'] }}
-                        </a>
+                        @if ($store['button_text_1'])
+                            <a href="{{ $store['button_link_1'] }}"
+                                class="w-2/5 border border-[#734ddb] py-2 pl-5 pr-9 text-center text-[#734ddb] transition hover:bg-[#734ddb] hover:text-white">
+                                {{ $store['button_text_1'] }}
+                            </a>
+                        @endif
 
-                        <a href="{{ $store['button_link_2'] }}"
-                            class="w-2/5 border border-[#734ddb] py-2 pl-5 pr-9 text-center text-[#734ddb] transition hover:bg-[#734ddb] hover:text-white">
-                            {{ $store['button_text_2'] }}
-                        </a>
+                        @if ($store['button_text_2'])
+                            <a href="{{ $store['button_link_2'] }}"
+                                class="w-2/5 border border-[#734ddb] py-2 pl-5 pr-9 text-center text-[#734ddb] transition hover:bg-[#734ddb] hover:text-white">
+                                {{ $store['button_text_2'] }}
+                            </a>
+                        @endif
 
                     </div>
 

@@ -72,5 +72,16 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        // Block: Gallery
+        acf_register_block_type(array(
+            'name'              => 'gallery',
+            'title'             => __('Gallery'),
+            'description'       => __('A block for showing gallery.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/gallery', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

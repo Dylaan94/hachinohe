@@ -83,5 +83,27 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        // Block: Text Panel
+        acf_register_block_type(array(
+            'name'              => 'text-panel',
+            'title'             => __('Text Panel'),
+            'description'       => __('A block for showing text panels.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/text-panel', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
+
+        // Block: Text Cards
+        acf_register_block_type(array(
+            'name'              => 'text-cards',
+            'title'             => __('Text Cards'),
+            'description'       => __('A block for showing text cards.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/text-cards', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

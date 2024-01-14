@@ -7,8 +7,8 @@
             @if ($item['label'] === '')
                 <span class="row-nocontent block pb-2"></span>
             @else
-                <span class="row flex">
-                    <p class="w-1/3 pr-2 sm:w-1/6">{{ $item['label'] }}</p>
+                <span class="row flex flex-col sm:flex-row">
+                    <p class="py-2 font-semibold sm:w-1/6 sm:pb-0 sm:font-normal">{{ $item['label'] }}</p>
                     <p class="text-gray-800">{{ $item['value'] }}</p>
                 </span>
             @endif

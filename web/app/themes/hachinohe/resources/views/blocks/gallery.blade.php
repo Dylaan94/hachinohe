@@ -1,13 +1,13 @@
 {{--
     TODO:
-    - add PDF button link
+    - add PDF button link - get off Alex
 
     --}}
 
 <section class="gallery flex flex-col items-center bg-black pb-16">
 
     @if (get_field('title'))
-        <h2 class="py-16 text-center text-3xl text-white">{{ get_field('title') }}</h2>
+        <h2 class="w-11/12 py-16 text-center text-2xl text-white sm:text-3xl">{{ get_field('title') }}</h2>
     @endif
 
     @if (get_field('gallery'))
@@ -24,5 +24,4 @@
         </div>
 
     @endif
-
 </section>

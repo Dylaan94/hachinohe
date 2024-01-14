@@ -1,14 +1,9 @@
-{{--
-    TODO:
-    - Responsives
---}}
-
-<section class="hero flex h-[70vh] w-full items-end justify-center border-[18px] border-white bg-cover pb-8"
+<section class="hero flex h-[70vh] w-full items-end justify-center border-[18px] border-white bg-cover bg-center pb-8"
     style="background-image: url('{{ get_field('background_image') }}')">
 
     {{-- Content --}}
 
-    <div class="hero-content flex flex-col items-center">
+    <div class="hero-content flex w-11/12 flex-col items-center text-center">
 
         @php
             $content = get_field('content');

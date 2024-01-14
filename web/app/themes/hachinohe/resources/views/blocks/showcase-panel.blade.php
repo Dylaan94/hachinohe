@@ -6,7 +6,7 @@
             <div class="showcase-panel-item-container flex w-3/4 max-w-screen-lg flex-col py-8">
 
                 {{-- Title and Main Image --}}
-                <h2 class="pb-6 text-4xl">{{ $panel['title'] }}</h2>
+                <h2 class="pb-6 text-3xl sm:text-4xl">{{ $panel['title'] }}</h2>
 
                 @if ($panel['main_image'])
                     <img class="h-[50vh] w-full object-cover"
@@ -15,10 +15,11 @@
                 @endif
 
                 {{-- Columns --}}
-                <div class="showcase-panel-columns mt-16 grid grid-cols-3 gap-16">
+                <div
+                    class="showcase-panel-columns mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-16 md:grid-cols-3">
                     @foreach ($panel['columns'] as $column)
                         <div class="showcase-panel-column flex flex-col items-center">
-                            <img class="aspect-video h-auto w-full object-cover"
+                            <img class="aspect-square h-auto w-full object-cover sm:aspect-video"
                                 src="{{ $column['image'] }}"
                                 alt="">
                             {{-- Column header --}}

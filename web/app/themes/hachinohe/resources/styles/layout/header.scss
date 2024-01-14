@@ -1,7 +1,6 @@
 .banner {
   .nav-menus {
     .menu-upper-navigation-container {
-      @apply self-end;
       ul {
         li {
           @apply ml-[10px];
@@ -13,8 +12,9 @@
       }
     }
 
-    .menu-main-menu-container {
-      @apply h-full items-center flex justify-end;
+    .menu-main-menu-container,
+    .menu-main-menu-english-container {
+      @apply h-full items-center flex;
 
       ul li {
         @apply text-lg;

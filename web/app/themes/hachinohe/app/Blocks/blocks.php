@@ -105,5 +105,16 @@ function my_acf_blocks_init()
             },
             'category'          => 'formatting',
         ));
+
+        //Block: CTA
+        acf_register_block_type(array(
+            'name'              => 'cta',
+            'title'             => __('CTA'),
+            'description'       => __('A block for showing CTA.'),
+            'render_callback' => function ($block) {
+                echo view('blocks/cta', ['block' => $block]);
+            },
+            'category'          => 'formatting',
+        ));
     }
 }

@@ -2,6 +2,7 @@
     TODO:
     - add socials to header
     - responsive
+    - underline on hover
     --}}
 
 <header class="banner flex w-full justify-center">

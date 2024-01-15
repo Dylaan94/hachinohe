@@ -1566,6 +1566,7 @@ add_action('acf/include_fields', function () {
     ));
 
     // Options: Global Settings
+
     acf_add_local_field_group(array(
         'key' => 'group_657dbb5299aca',
         'title' => 'Options: Global Settings',
@@ -1643,7 +1644,7 @@ add_action('acf/include_fields', function () {
                 'label' => '第一サイトのリンク',
                 'name' => 'site_1_link',
                 'aria-label' => '',
-                'type' => 'link',
+                'type' => 'text',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
@@ -1652,8 +1653,12 @@ add_action('acf/include_fields', function () {
                     'class' => '',
                     'id' => '',
                 ),
-                'wpml_cf_preferences' => 1,
-                'return_format' => 'url',
+                'wpml_cf_preferences' => 2,
+                'default_value' => '',
+                'maxlength' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
             ),
             array(
                 'key' => 'field_65a3f796f1119',
@@ -1681,7 +1686,7 @@ add_action('acf/include_fields', function () {
                 'label' => '第二サイトのリンク',
                 'name' => 'site_2_link',
                 'aria-label' => '',
-                'type' => 'link',
+                'type' => 'text',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
@@ -1690,8 +1695,12 @@ add_action('acf/include_fields', function () {
                     'class' => '',
                     'id' => '',
                 ),
-                'wpml_cf_preferences' => 1,
-                'return_format' => 'url',
+                'wpml_cf_preferences' => 2,
+                'default_value' => '',
+                'maxlength' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
             ),
             array(
                 'key' => 'field_65a585e2a1ef3',

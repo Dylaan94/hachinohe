@@ -1,6 +1,8 @@
 .banner {
   .nav-menus {
-    .menu-upper-navigation-container {
+    .menu-upper-navigation-container,
+    .menu-upper-navigation-english-container,
+    .menu-upper-navigation-chinese-container {
       ul {
         li {
           @apply ml-[10px];

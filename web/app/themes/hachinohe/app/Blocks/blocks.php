@@ -595,6 +595,7 @@ add_action('acf/include_fields', function () {
                 'placeholder' => '',
                 'prepend' => '',
                 'append' => '',
+                'wpml_cf_preferences' => 2,
             ),
             array(
                 'key' => 'field_659d9a412a6ee',
@@ -617,6 +618,7 @@ add_action('acf/include_fields', function () {
                 'collapsed' => '',
                 'button_label' => 'Add Row',
                 'rows_per_page' => 20,
+                'wpml_cf_preferences' => 1,
                 'sub_fields' => array(
                     array(
                         'key' => 'field_659d9a652a6ef',
@@ -643,8 +645,47 @@ add_action('acf/include_fields', function () {
                         'mime_types' => '',
                         'preview_size' => 'medium',
                         'parent_repeater' => 'field_659d9a412a6ee',
+                        'wpml_cf_preferences' => 1,
                     ),
                 ),
+            ),
+            array(
+                'key' => 'field_65a590d9802d8',
+                'label' => 'バタンテキスト',
+                'name' => 'button_text',
+                'aria-label' => '',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'wpml_cf_preferences' => 2,
+                'default_value' => '',
+                'maxlength' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array(
+                'key' => 'field_65a590ee802d9',
+                'label' => 'バタンリンク',
+                'name' => 'button_link',
+                'aria-label' => '',
+                'type' => 'link',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'wpml_cf_preferences' => 1,
+                'return_format' => 'url',
             ),
         ),
         'location' => array(
@@ -665,6 +706,7 @@ add_action('acf/include_fields', function () {
         'active' => true,
         'description' => '',
         'show_in_rest' => 0,
+        'acfml_field_group_mode' => 'translation',
     ));
 
     // Block: Google Maps

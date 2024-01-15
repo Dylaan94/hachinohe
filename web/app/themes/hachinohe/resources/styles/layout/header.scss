@@ -5,7 +5,7 @@
     .menu-upper-navigation-chinese-container {
       ul {
         li {
-          @apply ml-[10px];
+          @apply ml-[10px] hover:underline;
         }
         li::after {
           content: '|';

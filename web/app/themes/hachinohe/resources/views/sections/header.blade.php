@@ -21,7 +21,7 @@
                 <span class="flex self-end pt-[10px] text-xs">
                     @include('partials.booking-site')
                     {!! wp_nav_menu(['theme_location' => 'upper_navigation', 'menu_class' => 'nav flex', 'echo' => false]) !!}
-
+                    @include('partials.social-media')
                 </span>
 
                 {!! wp_nav_menu([

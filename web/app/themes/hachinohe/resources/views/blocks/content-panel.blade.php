@@ -78,7 +78,7 @@
 
                     <a class="border border-[#13b767] py-1 pl-5 pr-9 text-[#13b767] transition hover:bg-[#13b767] hover:text-white"
                         href="{{ $store['store_button_link'] }}">
-                        {{ $store['store_button_text'] }}
+                        {{ $store['store_button_text'] }} ➤
                     </a>
                 </div>
 

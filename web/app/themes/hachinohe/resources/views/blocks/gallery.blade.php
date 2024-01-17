@@ -13,7 +13,8 @@
     @if (get_field('button_text'))
         <div class="flex w-11/12 justify-center py-6">
             <a href="{{ get_field('button_link') }}"
-                class="border border-[#13b767] py-2 pl-5 pr-9 text-center text-[#13b767] transition hover:cursor-pointer hover:bg-[#13b767] hover:text-black">{{ get_field('button_text') }}</a>
+                class="border border-[#13b767] px-5 py-2 text-center text-[#13b767] transition hover:cursor-pointer hover:bg-[#13b767] hover:text-black">{{ get_field('button_text') }}
+                ➤</a>
         </div>
     @endif
 

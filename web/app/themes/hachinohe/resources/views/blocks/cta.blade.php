@@ -1,5 +1,5 @@
  @php
-     $button_classes = 'cta-button py-2 pl-5 pr-9 text-center border border-black text-black hover:bg-black hover:text-white transition';
+     $button_classes = 'cta-button py-2 px-5 text-center border border-black text-black hover:bg-black hover:text-white transition';
      $button_text = get_field('button_text');
  @endphp
 
@@ -16,7 +16,7 @@
 
          <div class="cta-button flex justify-center pt-2">
              <a href="{{ get_field('button_link') }}"
-                 class="{{ $button_classes }}">{{ $button_text }}</a>
+                 class="{{ $button_classes }}">{{ $button_text }} ➤</a>
          </div>
 
 

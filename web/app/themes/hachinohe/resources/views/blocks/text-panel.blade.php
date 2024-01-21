@@ -8,8 +8,12 @@
                 <span class="row-nocontent block pb-2"></span>
             @else
                 <span class="row flex flex-col sm:flex-row">
-                    <p class="py-2 font-semibold sm:w-1/6 sm:pb-0 sm:font-normal">{{ $item['label'] }}</p>
-                    <p class="py-2 text-gray-800 sm:pb-0">{!! $item['value'] !!}</p>
+                    @if ($item['value'])
+                        <p class="py-2 font-semibold sm:w-1/6 sm:pb-0 sm:font-normal">{{ $item['label'] }}</p>
+                        <p class="py-2 text-gray-800 sm:pb-0">{!! $item['value'] !!}</p>
+                    @else
+                        <p class="sm:text-lg py-2 font-semibold sm:w-1/6 sm:pb-0">{{ $item['label'] }}</p>
+                    @endif
                 </span>
             @endif
         @endforeach

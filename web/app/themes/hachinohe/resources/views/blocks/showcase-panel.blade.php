@@ -6,7 +6,7 @@
             <div class="showcase-panel-item-container flex w-3/4 max-w-screen-lg flex-col py-8">
 
                 {{-- Title and Main Image --}}
-                <h2 class="pb-6 text-3xl sm:text-4xl">{{ $panel['title'] }}</h2>
+                <h2 class="pb-6 text-3xl sm:text-5xl">{{ $panel['title'] }}</h2>
 
                 @if ($panel['main_image'])
                     <img class="h-[50vh] w-full object-cover"

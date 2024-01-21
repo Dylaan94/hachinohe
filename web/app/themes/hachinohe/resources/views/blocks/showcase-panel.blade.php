@@ -34,14 +34,34 @@
 
                 @php
                     $button_colour = $panel['button_colour'];
-                    $button_classes = "border py-2 px-5 text-center border-[{$button_colour}] text-[{$button_colour}] hover:bg-[{$button_colour}] hover:text-white transition";
+                    $button_classes = "border py-2 px-5 mx-6 my-2 text-center border-[{$button_colour}] text-[{$button_colour}] hover:bg-[{$button_colour}] hover:text-white transition";
                 @endphp
 
-                <div class="showcase-panel-button flex justify-center pt-8">
-                    <a href="{{ $panel['link'] }}"
-                        class="{{ $button_classes }}">
-                        {{ $panel['link_text'] }} ➤
-                    </a>
+
+                <div class="showcase-panel-button flex flex-col justify-center pt-8 sm:flex-row">
+
+                    @if ($panel['link_text'])
+                        <a href="{{ $panel['link'] }}"
+                            class="{{ $button_classes }}">
+                            {{ $panel['link_text'] }} ➤
+                        </a>
+                    @endif
+
+                    @if ($panel['link_text_2'])
+                        <a href="{{ $panel['link_2'] }}"
+                            class="{{ $button_classes }}">
+                            {{ $panel['link_text_2'] }} ➤
+                        </a>
+                    @endif
+
+
+                    @if ($panel['link_text_3'])
+                        <a href="{{ $panel['link_3'] }}"
+                            class="{{ $button_classes }}">
+                            {{ $panel['link_text_3'] }} ➤
+                        </a>
+                    @endif
+
                 </div>
 
             </div>

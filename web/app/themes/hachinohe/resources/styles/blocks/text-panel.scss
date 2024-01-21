@@ -1,0 +1,9 @@
+.text-panel {
+  .text-panel-container {
+    .row {
+      a {
+        @apply hover:underline hover:cursor-pointer;
+      }
+    }
+  }
+}

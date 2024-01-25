@@ -1,8 +1,9 @@
-<section class="text-panel flex w-full justify-center border-l-[18px] py-12"
+<section id="{{ get_field('title') }}"
+    class="text-panel flex w-full justify-center border-l-[18px] py-12"
     style="border-color: {{ get_field('border_colour') }}; background-color: {{ get_field('background_colour') }}">
 
     <div class="text-panel-container w-3/4 max-w-screen-lg">
-        <h2 class="pb-2 text-2xl font-semibold">{{ get_field('title') }}</h2>
+        <h2 class="pb-2 text-2xl font-semibold">{{ get_field('id') }}</h2>
         @foreach (get_field('content') as $item)
             @if ($item['label'] === '' && $item['value'] === '')
                 <span class="row-nocontent block pb-2"></span>

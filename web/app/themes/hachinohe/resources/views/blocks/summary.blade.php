@@ -13,3 +13,18 @@
         </div>
     </div>
 </section>
+
+
+
+
+<section class="anchor-links flex w-full justify-center border-l-[18px] py-12">
+    <div class="anchor-links-container flex w-3/4 max-w-screen-xl flex-col">
+        <h2 class="pb-2 text-3xl">INDEX</h2>
+        @foreach (get_field('anchor_links') as $link)
+            <a href="#{{ $link['id'] }}"
+                class="index-tag text-base text-gray-800">
+                <span class="index-tag-text hover:cursor-pointer hover:underline">{{ $link['text'] }}</span>
+            </a>
+        @endforeach
+    </div>
+</section>

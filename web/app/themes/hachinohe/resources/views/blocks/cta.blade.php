@@ -3,12 +3,15 @@
      $button_text = get_field('button_text');
  @endphp
 
- <section class="cta flex w-full justify-center py-12">
+ <section id="{{ get_field('id') }}"
+     class="cta flex w-full justify-center py-12">
 
      <div class="cta-container flex w-4/5 max-w-screen-lg flex-col items-center">
          <img class="w-1/2 sm:w-1/4"
              src="{{ get_field('image') }}"
              alt="cta image">
+
+
          <div class="cta-content w-full text-center text-lg text-gray-800">
              {!! get_field('content') !!}
          </div>

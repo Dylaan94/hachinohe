@@ -18,7 +18,7 @@
 
 
 <section class="anchor-links flex w-full justify-center border-l-[18px] py-12">
-    <div class="anchor-links-container flex w-3/4 max-w-screen-xl flex-col">
+    <div class="anchor-links-container flex w-3/4 max-w-screen-lg flex-col">
         <h2 class="pb-2 text-3xl">INDEX</h2>
         @foreach (get_field('anchor_links') as $link)
             <a href="#{{ $link['id'] }}"

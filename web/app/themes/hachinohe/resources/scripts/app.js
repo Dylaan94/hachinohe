@@ -1,14 +1,14 @@
 import domReady from '@roots/sage/client/dom-ready';
 import handleSwipers from './handlers/handleSwipers';
+import handleAnchorTags from './handlers/handleAnchorTags';
 
 /**
  * Application entrypoint
  */
 
 domReady(async () => {
-  console.log('Hello, world!');
-
   handleSwipers();
+  handleAnchorTags();
 });
 
 /**

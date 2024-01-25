@@ -15,7 +15,7 @@
             $modifiedContent = preg_replace_callback(
                 $pattern,
                 function ($matches) {
-                    return '<' . $matches[1] . '><span class="bg-white">' . $matches[2] . '</span></' . $matches[1] . '>';
+                    return '<' . $matches[1] . '><span class="bg-white leading-tight">' . $matches[2] . '</span></' . $matches[1] . '>';
                 },
                 $content,
             );

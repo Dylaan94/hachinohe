@@ -5,7 +5,7 @@
     - underline on hover
     --}}
 
-<header class="banner flex w-full justify-center">
+<header class="banner hidden w-full justify-center lg:flex">
     @if (has_nav_menu('primary_navigation'))
         <nav class="nav-primary flex h-[125px] w-full items-center"
             aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
@@ -35,3 +35,22 @@
         </nav>
     @endif
 </header>
+
+{{-- <header class="mobile-banner flex h-20 w-full items-center justify-end px-[18px] pt-[18px]">
+
+
+    @if (has_nav_menu('primary_navigation'))
+        <div class="z-50 h-screen w-full bg-white">
+
+        </div>
+    @endif
+
+    <div class="hamburger hidden flex-col hover:cursor-pointer">
+        <div class="hamburger-line mb-2 h-1 w-12 bg-black"></div>
+        <div class="hamburger-line mb-2 h-1 w-12 bg-black"></div>
+        <div class="hamburger-line mb-2 h-1 w-12 bg-black"></div>
+
+    </div>
+
+
+</header> --}}

@@ -29,3 +29,11 @@
     }
   }
 }
+
+.mobile-banner {
+  ul {
+    li {
+      @apply pb-8 text-center;
+    }
+  }
+}

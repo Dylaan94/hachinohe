@@ -1,6 +1,7 @@
 import domReady from '@roots/sage/client/dom-ready';
 import handleSwipers from './handlers/handleSwipers';
 import handleAnchorTags from './handlers/handleAnchorTags';
+import handleHamburgerMenu from './handlers/handleHamburgerMenu';
 
 /**
  * Application entrypoint
@@ -9,6 +10,7 @@ import handleAnchorTags from './handlers/handleAnchorTags';
 domReady(async () => {
   handleSwipers();
   handleAnchorTags();
+  handleHamburgerMenu();
 });
 
 /**
